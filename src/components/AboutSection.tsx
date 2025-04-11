@@ -82,9 +82,10 @@ const AboutSection = () => {
         </div>
 
         {/* Leadership Section */}
+        <section id="leaders">
         <div className="mt-24">
           <h2 className="text-3xl font-montserrat font-bold text-cpp-blue text-center mb-16">
-            Our Leadership
+          Leadership Team
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -114,6 +115,7 @@ const AboutSection = () => {
             ))}
           </div>
         </div>
+        </section>
         
         <div className="mt-24 bg-white p-8 lg:p-12 rounded-lg shadow-lg border border-cpp-accent/10">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">

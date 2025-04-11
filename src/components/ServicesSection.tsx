@@ -1,23 +1,23 @@
 
-import { BrainCircuit, LineChart, ShieldAlert, Settings } from "lucide-react";
+import { BrainCircuit, LineChart, ShieldAlert, Settings, Route } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ServicesSection = () => {
   const services = [
     {
+      icon: <Route className="h-10 w-10 text-cpp-accent" />,
+      title: "CX Journey Mapping",
+      description: "Visual representation of a customer’s end-to-end experience with a product, service, or brand."
+    },
+    {
       icon: <BrainCircuit className="h-10 w-10 text-cpp-accent" />,
-      title: "Ai Readiness Assessment",
+      title: "Ai Readiness",
       description: "We help organizations develop comprehensive AI strategies aligned with business goals, identifying high-impact opportunities and creating implementation roadmaps."
     },
     {
       icon: <LineChart className="h-10 w-10 text-cpp-accent" />,
       title: "Ai Roadmap",
       description: "Our consultants analyze your operations to identify where AI can enhance efficiency, reduce costs, and improve overall business performance."
-    },
-    {
-      icon: <ShieldAlert className="h-10 w-10 text-cpp-accent" />,
-      title: "ROI Analysis",
-      description: "We help you navigate the ethical, regulatory, and security considerations of AI implementation, ensuring responsible and compliant usage."
     },
     {
       icon: <Settings className="h-10 w-10 text-cpp-accent" />,

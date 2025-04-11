@@ -56,12 +56,11 @@ const ContactSection = () => {
             <div>
               <h3 className="text-xl font-montserrat font-semibold mb-4 flex items-center">
                 <MapPin className="mr-3 h-5 w-5" />
-                Our Office
+                Our Motto
               </h3>
-              <p className="text-white/80">
-                123 Covington Place<br />
-                Suite 400<br />
-                Chicago, IL 60601
+              <p className="text-white/80"><br/>
+              Ai made simple. <br/>
+               Innovation made possible.
               </p>
             </div>
             
@@ -93,7 +92,7 @@ const ContactSection = () => {
           
           <div className="lg:col-span-2">
             {/* <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg"> */}
-            <form action="https://formsubmit.co/vanshajfirebase@gmail.com" method="POST" className="bg-white p-8 rounded-lg text-gray-800">
+            <form action="https://formsubmit.co/Shea@covingtonplacepartners.com" method="POST" className="bg-white p-8 rounded-lg text-gray-800">
               <h3 className="text-xl font-montserrat font-semibold text-cpp-blue mb-6">
                 Send Us a Message
               </h3>
@@ -138,7 +137,8 @@ const ContactSection = () => {
               
               <div className="mt-6">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Your Message*
+                  Your Message<br/>
+                  (Do let us know where you are on the Ai usage. We meet you where you are on the maturity curve.)
                 </label>
                 <Textarea
                   id="message"

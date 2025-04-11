@@ -1,5 +1,5 @@
 
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Check } from "lucide-react";
 
 const WhyUsSection = () => {
   const reasons = [
@@ -52,8 +52,52 @@ const WhyUsSection = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="order-1 lg:order-2 bg-white p-8 rounded-lg shadow-lg">
+  <h3 className="text-2xl font-montserrat font-bold text-cpp-blue mb-6 text-center">
+    Our Difference
+  </h3>
+
+  <div className="space-y-6">
+    {[
+      {
+        title: "No Platform Bias",
+        desc: "We do what is right for the client above all. Platforms are not our first priority.",
+      },
+      {
+        title: "Tailored Solutions",
+        desc: "The value that we bring as consultants is to work with our clients to identify needs and pain points first.",
+      },
+      {
+        title: "Implementation Excellence",
+        desc: "Our focus extends beyond strategy to successful implementation and organizational adoption.",
+      },
+    ].map((item, index) => (
+      <div key={index} className="flex items-start">
+        <div className="min-w-[3rem] h-12 rounded-full bg-cpp-accent/10 flex items-center justify-center">
+          <Check className="text-cpp-accent h-6 w-6" />
+        </div>
+        <div className="ml-4">
+          <h4 className="text-lg font-medium text-cpp-blue mb-1">
+            {item.title}
+          </h4>
+          <p className="text-gray-600">{item.desc}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div className="mt-8 p-4 bg-cpp-blue/5 rounded border border-cpp-blue/10">
+    <p className="text-cpp-blue font-inter text-sm text-center">
+      "What sets us apart is our commitment to making AI accessible, practical, and valuable for your 
+      specific business context. We don't just advise – we help you succeed."
+    </p>
+  </div>
+</div>
+
+
+          
+          {/* <div className="order-1 lg:order-2 bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-montserrat font-bold text-cpp-blue mb-6">
               Our Difference
             </h3>
@@ -108,7 +152,7 @@ const WhyUsSection = () => {
                 specific business context. We don't just advise – we help you succeed."
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

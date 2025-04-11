@@ -7,6 +7,8 @@ import WhyUsSection from "@/components/WhyUsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import AISpectrumSection from "@/components/Ailandscape";
+import AiConsultingMethodology from "@/components/Navigation";
 
 const Index = () => {
   return (
@@ -17,7 +19,9 @@ const Index = () => {
       <Hero />
       <AboutSection />
       <ServicesSection />
+      <AISpectrumSection />
       <WhyUsSection />
+      <AiConsultingMethodology />
       <TestimonialsSection />
       <ContactSection />
       <Footer />
