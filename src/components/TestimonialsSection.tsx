@@ -108,7 +108,7 @@ const TestimonialsSection = () => {
           </div>
         </div>
         
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="flex justify-center">
             <div className="h-16 w-48 bg-gray-200 rounded"></div>
           </div>
@@ -121,7 +121,7 @@ const TestimonialsSection = () => {
           <div className="flex justify-center">
             <div className="h-16 w-48 bg-gray-200 rounded"></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

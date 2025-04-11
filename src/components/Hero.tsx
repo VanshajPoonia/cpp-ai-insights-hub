@@ -17,13 +17,19 @@ const Hero = () => {
               and enhance performance by simplifying AI implementation for practical business solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+            <a href="#services" className="scroll-smooth">
               <Button className="bg-cpp-accent hover:bg-cpp-light-accent text-white px-8 py-6 text-lg">
                 Our Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
+            </a>
+
+              <a href="#contact" className="scroll-smooth">
+              <Button className="text-white border border-white shadow-z-heavy hover:shadow-2xl hover:bg-white/10 px-8 py-6 text-lg transition-all duration-300">
                 Contact Us
               </Button>
+            </a>
+
             </div>
           </div>
           <div className="hidden lg:block relative">

@@ -10,7 +10,9 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-inter">
+    <div className="min-h-screen font-inter scroll-mt-24">
+ 
+
       <Navbar />
       <Hero />
       <AboutSection />

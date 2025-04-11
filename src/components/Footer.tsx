@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-cpp-blue text-white border-t border-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-montserrat font-semibold mb-4">About CPP</h3>
             <p className="text-white/70 mb-4">
@@ -55,15 +55,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-white/70">123 Covington Place</li>
               <li className="text-white/70">Chicago, IL 60601</li>
-              <li className="text-white/70">(312) 555-7890</li>
-              <li><a href="mailto:info@covingtonplacepartners.com" className="text-white/70 hover:text-white">info@covingtonplacepartners.com</a></li>
+              <li className="text-white/70">+1 314-960-0015</li>
+              <li><a href="mailto:Shea@covingtonplacepartners.com" className="text-white/70 hover:text-white">Shea@covingtonplacepartners.com</a></li>
             </ul>
           </div>
-        </div>
+        </div> */}
         
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70">
-            &copy; {currentYear} Covington Place Partners. All rights reserved.
+            &copy; {currentYear} Covington Place Partners LLC. All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0">

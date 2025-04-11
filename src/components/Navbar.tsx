@@ -18,8 +18,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed w-full top-0 z-50 bg-cpp-blue py-4 shadow-md"
-    >
+      // className="fixed w-4/6 top-0 z-50 bg-cpp-blue py-4 shadow-md"
+      className="fixed inset-x-0 top-0 z-50 bg-cpp-blue shadow-md">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center">
           {/* Logo on the left with more padding */}
@@ -28,7 +29,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </a>
           </div>
@@ -84,6 +85,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
+      </div>
     </nav>
   );
 };

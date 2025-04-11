@@ -23,27 +23,27 @@ const AboutSection = () => {
   
   const founders = [
     {
-      name: "Richard Covington",
-      title: "Co-Founder & CEO",
-      bio: "With over 15 years of experience in technology consulting, Richard brings deep expertise in AI implementation and business strategy. He has led digital transformation initiatives for Fortune 500 companies across various industries.",
+      name: "Mike Burns",
+      title: "Head of Growth",
+      bio: "Former Chief Strategy Officer of Veil. Former President, Wunderman Thompson Health Former EVP, Marketing Direct.",
       imgUrl: "/lovable-uploads/faf2caa8-3fc5-4d36-9ccb-4892bc452a60.png"
     },
     {
-      name: "Sarah Place",
-      title: "Co-Founder & CTO",
-      bio: "Sarah is a recognized expert in artificial intelligence with a Ph.D. in Computer Science. Before co-founding CPP, she led AI research teams at leading tech companies and has published extensively on practical AI applications for business.",
+      name: "Shea Long",
+      title: "Head of Innovation",
+      bio: "Former Chief Product Officer, Alivi Health. Former Head of Commercial Innovation, Centene, ModivCare, Papa Health, EmpowerMe Wellness",
       imgUrl: "/lovable-uploads/e74dcb32-af0d-4c86-933b-1c352325faf3.png"
     },
     {
-      name: "Michael Johnson",
-      title: "Partner & COO",
-      bio: "Michael brings over 20 years of operational excellence to the team. His background in scaling technology companies and optimizing business processes ensures our clients receive implementation strategies that are both innovative and practical.",
+      name: "John Cage",
+      title: "Transformation Lead",
+      bio: "Former VP of Enterprise Support Services, Sykes Enterprises. Former VP, CoreExpress Founder and Investor, Lit.Ai",
       imgUrl: "/lovable-uploads/88dfe074-2883-4c83-9054-8ad10ac731b7.png"
     },
     {
-      name: "Jennifer Williams",
-      title: "Partner & CSO",
-      bio: "Jennifer specializes in AI strategy and digital transformation. With her background in both technology and business consulting, she excels at helping clients identify high-impact AI opportunities that align with their strategic objectives.",
+      name: "Jennifer Hickman",
+      title: "Consumer Strategy & Engagement",
+      bio: "Former EVP, Wunderman Thompson Health. Managing Partner, JH Marketing Group.",
       imgUrl: "/lovable-uploads/2248b558-817a-46c4-8ad2-2ee443b6c186.png"
     }
   ];
@@ -57,8 +57,7 @@ const AboutSection = () => {
           </h2>
           <div className="w-24 h-1 bg-cpp-accent mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            We are a specialized consulting firm dedicated to making artificial intelligence accessible 
-            and practical for businesses of all sizes. Our team combines deep expertise in AI technologies 
+            Our team combines deep expertise in AI technologies 
             with seasoned business acumen to bridge the gap between complex technology and real-world application.
           </p>
         </div>
@@ -123,24 +122,19 @@ const AboutSection = () => {
                 Our Mission
               </h3>
               <p className="text-gray-700 mb-6">
-                At Covington Place Partners, we believe that artificial intelligence should be a powerful tool 
-                accessible to all organizations, not just tech giants with unlimited resources. Our mission is 
-                to demystify AI and help our clients implement practical solutions that drive real business value.
+              We enable mid-market enterprises to thrive in the AI era by designing solutions to optimize operational efficiency, elevate user experience, and drive scalable value.
               </p>
               <p className="text-gray-700">
-                We pride ourselves on translating complex technical concepts into clear, actionable strategies 
-                that align with your business objectives. By bridging the gap between cutting-edge technology and 
-                practical business application, we empower our clients to harness AI's transformative potential.
+              We’re selling consulting services based upon trust, experience and confidence that is derived from a valued, unbiased, and trusted partner. 
               </p>
             </div>
             <div className="lg:col-span-2 flex justify-center items-center">
               <div className="bg-cpp-accent/5 p-6 rounded-lg border border-cpp-accent/20">
                 <p className="italic text-cpp-blue font-inter text-lg">
-                  "Our goal is simple: to make AI work for you, not the other way around. We translate complex 
-                  technology into practical solutions that deliver measurable business results."
+                  "Our purpose is simple: To be the trusted partner that simplifies AI and delivers unbiased, outcome-driven solutions aligned to each client’s unique goals."
                 </p>
                 <div className="mt-4 flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-cpp-blue mr-4 flex items-center justify-center text-white font-bold">RC</div>
+                  <div className="w-12 h-12 rounded-full bg-cpp-blue mr-4 flex items-center justify-center text-white font-bold">CPP</div>
                   <div>
                     <h4 className="font-montserrat font-medium text-cpp-blue">
                       The Leadership Team

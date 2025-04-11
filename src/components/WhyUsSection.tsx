@@ -12,11 +12,11 @@ const WhyUsSection = () => {
       description: "We recommend solutions based on your needs, not our partnerships, ensuring you get the best fit for your business."
     },
     {
-      title: "Focus on Measurable Results",
-      description: "We define clear KPIs from the start and track progress to ensure your AI investments deliver tangible returns."
+      title: "Focus on business questions, not technology questions",
+      description: "We understand the objectives of your business and then tailor the solutions."
     },
     {
-      title: "End-to-End Support",
+      title: "Build trust through listening, not selling.",
       description: "From strategy through implementation to ongoing optimization, we provide comprehensive support at every stage."
     }
   ];
@@ -30,8 +30,7 @@ const WhyUsSection = () => {
           </h2>
           <div className="w-24 h-1 bg-cpp-accent mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            We differentiate ourselves through our practical approach to AI consulting, 
-            focusing on business outcomes rather than technical complexity.
+          CPP prides itself on being a trusted partner to our clients. Advisory First, Vendor Second
           </p>
         </div>
         
@@ -66,10 +65,10 @@ const WhyUsSection = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-cpp-blue mb-1">
-                    Simplifying Complexity
+                  No platform Bias. 
                   </h4>
                   <p className="text-gray-600">
-                    We translate complex AI concepts into clear, understandable terms and actionable strategies.
+                  We do what is right for the client above all.
                   </p>
                 </div>
               </div>
@@ -83,7 +82,7 @@ const WhyUsSection = () => {
                     Tailored Solutions
                   </h4>
                   <p className="text-gray-600">
-                    We customize our approach for each client rather than applying one-size-fits-all solutions.
+                  The value that we bring as consultants is to work with our clients to identify needs and pain points first. 
                   </p>
                 </div>
               </div>
@@ -98,20 +97,6 @@ const WhyUsSection = () => {
                   </h4>
                   <p className="text-gray-600">
                     Our focus extends beyond strategy to successful implementation and organizational adoption.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="mr-4 h-12 w-12 rounded-full bg-cpp-accent/10 flex items-center justify-center">
-                  <span className="text-cpp-accent font-bold">04</span>
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-cpp-blue mb-1">
-                    Ongoing Partnership
-                  </h4>
-                  <p className="text-gray-600">
-                    We build lasting relationships, continuing to support your AI journey as technology and needs evolve.
                   </p>
                 </div>
               </div>

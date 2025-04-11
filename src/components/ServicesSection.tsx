@@ -6,17 +6,17 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <BrainCircuit className="h-10 w-10 text-cpp-accent" />,
-      title: "AI Strategy Development",
+      title: "Ai Readiness Assessment",
       description: "We help organizations develop comprehensive AI strategies aligned with business goals, identifying high-impact opportunities and creating implementation roadmaps."
     },
     {
       icon: <LineChart className="h-10 w-10 text-cpp-accent" />,
-      title: "Performance Optimization",
+      title: "Ai Roadmap",
       description: "Our consultants analyze your operations to identify where AI can enhance efficiency, reduce costs, and improve overall business performance."
     },
     {
       icon: <ShieldAlert className="h-10 w-10 text-cpp-accent" />,
-      title: "AI Risk Management",
+      title: "ROI Analysis",
       description: "We help you navigate the ethical, regulatory, and security considerations of AI implementation, ensuring responsible and compliant usage."
     },
     {
@@ -61,10 +61,10 @@ const ServicesSection = () => {
           ))}
         </div>
         
-        <div className="mt-16 p-8 bg-gradient-to-r from-cpp-blue to-cpp-light-blue rounded-lg text-white">
+        {/* <div className="mt-16 p-8 bg-gradient-to-r from-cpp-blue to-cpp-light-blue rounded-lg text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-montserrat font-bold mb-4">Our Approach to AI Consulting</h3>
+              <h3 className="text-2xl font-montserrat font-bold mb-4 text-white">Our Approach to AI Consulting</h3>
               <p className="mb-6">
                 We believe in a pragmatic approach to AI implementation. Our process starts with understanding 
                 your business challenges, then identifying the right AI solutions to address them, followed by 
@@ -118,7 +118,7 @@ const ServicesSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

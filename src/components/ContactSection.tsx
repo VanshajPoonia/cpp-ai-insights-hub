@@ -71,14 +71,15 @@ const ContactSection = () => {
                 Contact Details
               </h3>
               <p className="text-white/80 mb-2">
-                Phone: (312) 555-7890
+                Phone: +1 314-960-0015
               </p>
               <p className="text-white/80">
-                Email: info@covingtonplacepartners.com
+                Email: Shea@covingtonplacepartners.com
+
               </p>
             </div>
             
-            <div>
+            {/* <div>
               <h3 className="text-xl font-montserrat font-semibold mb-4 flex items-center">
                 <Mail className="mr-3 h-5 w-5" />
                 Business Hours
@@ -87,11 +88,12 @@ const ContactSection = () => {
                 Monday - Friday: 9:00 AM - 6:00 PM<br />
                 Saturday - Sunday: Closed
               </p>
-            </div>
+            </div> */}
           </div>
           
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg">
+            {/* <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg"> */}
+            <form action="https://formsubmit.co/vanshajfirebase@gmail.com" method="POST" className="bg-white p-8 rounded-lg text-gray-800">
               <h3 className="text-xl font-montserrat font-semibold text-cpp-blue mb-6">
                 Send Us a Message
               </h3>
@@ -104,8 +106,6 @@ const ContactSection = () => {
                   <Input
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     className="w-full"
                     required
                   />
@@ -119,8 +119,6 @@ const ContactSection = () => {
                     id="email"
                     name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     className="w-full"
                     required
                   />
@@ -134,8 +132,6 @@ const ContactSection = () => {
                 <Input
                   id="company"
                   name="company"
-                  value={formData.company}
-                  onChange={handleChange}
                   className="w-full"
                 />
               </div>
@@ -147,8 +143,6 @@ const ContactSection = () => {
                 <Textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   className="w-full h-32"
                   required
                 />
