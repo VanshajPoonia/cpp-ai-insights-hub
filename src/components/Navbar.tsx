@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -20,11 +20,11 @@ const Navbar = () => {
     <nav
       className="fixed w-full top-0 z-50 bg-cpp-blue py-4 shadow-md"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center">
-          {/* Logo on the left */}
+          {/* Logo on the left with more padding */}
           <div className="flex items-center">
-            <a href="#home" className="flex items-center space-x-2">
+            <a href="#home" className="flex items-center space-x-2 -ml-2">
               <img 
                 src="/lovable-uploads/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
@@ -33,8 +33,8 @@ const Navbar = () => {
             </a>
           </div>
           
-          {/* Desktop Menu - Right aligned items */}
-          <div className="hidden md:flex items-center space-x-6">
+          {/* Desktop Menu - Positioned between center and right */}
+          <div className="hidden md:flex items-center space-x-6 max-w-[50%] justify-end pr-4">
             {navLinks.map((link, index) => (
               <Button 
                 key={link.name}
