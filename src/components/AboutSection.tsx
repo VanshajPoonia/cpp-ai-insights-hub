@@ -1,5 +1,6 @@
 
 import { ShieldCheck, Users, Target } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const AboutSection = () => {
   const values = [
@@ -24,12 +25,26 @@ const AboutSection = () => {
     {
       name: "Richard Covington",
       title: "Co-Founder & CEO",
-      bio: "With over 15 years of experience in technology consulting, Richard brings deep expertise in AI implementation and business strategy. He has led digital transformation initiatives for Fortune 500 companies across various industries."
+      bio: "With over 15 years of experience in technology consulting, Richard brings deep expertise in AI implementation and business strategy. He has led digital transformation initiatives for Fortune 500 companies across various industries.",
+      imgUrl: "/lovable-uploads/faf2caa8-3fc5-4d36-9ccb-4892bc452a60.png"
     },
     {
       name: "Sarah Place",
       title: "Co-Founder & CTO",
-      bio: "Sarah is a recognized expert in artificial intelligence with a Ph.D. in Computer Science. Before co-founding CPP, she led AI research teams at leading tech companies and has published extensively on practical AI applications for business."
+      bio: "Sarah is a recognized expert in artificial intelligence with a Ph.D. in Computer Science. Before co-founding CPP, she led AI research teams at leading tech companies and has published extensively on practical AI applications for business.",
+      imgUrl: "/lovable-uploads/e74dcb32-af0d-4c86-933b-1c352325faf3.png"
+    },
+    {
+      name: "Michael Johnson",
+      title: "Partner & COO",
+      bio: "Michael brings over 20 years of operational excellence to the team. His background in scaling technology companies and optimizing business processes ensures our clients receive implementation strategies that are both innovative and practical.",
+      imgUrl: "/lovable-uploads/88dfe074-2883-4c83-9054-8ad10ac731b7.png"
+    },
+    {
+      name: "Jennifer Williams",
+      title: "Partner & CSO",
+      bio: "Jennifer specializes in AI strategy and digital transformation. With her background in both technology and business consulting, she excels at helping clients identify high-impact AI opportunities that align with their strategic objectives.",
+      imgUrl: "/lovable-uploads/2248b558-817a-46c4-8ad2-2ee443b6c186.png"
     }
   ];
 
@@ -73,23 +88,26 @@ const AboutSection = () => {
             Our Leadership
           </h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {founders.map((founder, index) => (
-              <div key={index} className="flex flex-col md:flex-row items-center md:items-start gap-8">
-                <div className="w-48 h-48 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden">
-                  <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center text-5xl font-bold text-cpp-accent">
-                    {founder.name.charAt(0)}
-                  </div>
+              <div key={index} className="flex flex-col items-center text-center">
+                <div className="w-48 h-48 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden p-1 mb-6">
+                  <Avatar className="w-44 h-44">
+                    <AvatarImage src={founder.imgUrl} alt={founder.name} className="object-cover" />
+                    <AvatarFallback className="bg-white text-5xl font-bold text-cpp-accent">
+                      {founder.name.charAt(0)}
+                    </AvatarFallback>
+                  </Avatar>
                 </div>
                 
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-montserrat font-bold text-cpp-blue mb-2">
+                <div className="flex-1 text-center">
+                  <h3 className="text-xl font-montserrat font-bold text-cpp-blue mb-2">
                     {founder.name}
                   </h3>
                   <p className="text-cpp-accent font-medium mb-4">
                     {founder.title}
                   </p>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text-sm">
                     {founder.bio}
                   </p>
                 </div>
@@ -125,10 +143,10 @@ const AboutSection = () => {
                   <div className="w-12 h-12 rounded-full bg-cpp-blue mr-4 flex items-center justify-center text-white font-bold">RC</div>
                   <div>
                     <h4 className="font-montserrat font-medium text-cpp-blue">
-                      Richard Covington & Sarah Place
+                      The Leadership Team
                     </h4>
                     <p className="text-sm text-gray-600">
-                      Co-Founders
+                      Covington Place Partners
                     </p>
                   </div>
                 </div>

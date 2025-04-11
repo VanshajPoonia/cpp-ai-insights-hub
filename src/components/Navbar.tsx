@@ -40,7 +40,7 @@ const Navbar = () => {
         "fixed w-full top-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-white shadow-md py-2"
-          : "bg-transparent py-4"
+          : "bg-cpp-blue py-4"
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +71,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="font-inter text-cpp-blue hover:text-cpp-accent transition-colors"
+                  className="font-inter text-white hover:text-cpp-accent transition-colors"
                 >
                   {link.name}
                 </a>
@@ -83,7 +83,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="p-2 text-cpp-blue focus:outline-none"
+              className="p-2 text-white focus:outline-none"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />

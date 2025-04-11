@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-40 lg:pb-28 bg-gradient-to-br from-cpp-blue via-cpp-blue to-cpp-blue/90">
+    <section id="home" className="pt-28 pb-16 md:pt-36 md:pb-20 lg:pt-40 lg:pb-28 bg-gradient-to-br from-cpp-blue via-cpp-blue to-cpp-blue/90">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
