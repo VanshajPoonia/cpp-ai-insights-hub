@@ -64,10 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				cpp: {
-					'blue': '#0A2342',
+					'blue': '#001F54', /* Updated to navy */
 					'light-blue': '#2D5B85', 
-					'accent': '#6E59A5',
-					'light-accent': '#9b87f5',
+					'accent': '#E86C00', /* Updated to orange */
+					'light-accent': '#FF9E45', /* Lighter orange */
 					'gray': '#F6F6F7'
 				}
 			},

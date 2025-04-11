@@ -19,9 +19,22 @@ const AboutSection = () => {
       description: "We focus on delivering measurable results that drive meaningful business outcomes."
     }
   ];
+  
+  const founders = [
+    {
+      name: "Richard Covington",
+      title: "Co-Founder & CEO",
+      bio: "With over 15 years of experience in technology consulting, Richard brings deep expertise in AI implementation and business strategy. He has led digital transformation initiatives for Fortune 500 companies across various industries."
+    },
+    {
+      name: "Sarah Place",
+      title: "Co-Founder & CTO",
+      bio: "Sarah is a recognized expert in artificial intelligence with a Ph.D. in Computer Science. Before co-founding CPP, she led AI research teams at leading tech companies and has published extensively on practical AI applications for business."
+    }
+  ];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-cpp-gray">
+    <section id="about" className="py-16 md:py-24 bg-gradient-to-b from-cpp-blue/5 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-cpp-blue mb-4">
@@ -53,8 +66,39 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Leadership Section */}
+        <div className="mt-24">
+          <h2 className="text-3xl font-montserrat font-bold text-cpp-blue text-center mb-16">
+            Our Leadership
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {founders.map((founder, index) => (
+              <div key={index} className="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div className="w-48 h-48 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden">
+                  <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center text-5xl font-bold text-cpp-accent">
+                    {founder.name.charAt(0)}
+                  </div>
+                </div>
+                
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl font-montserrat font-bold text-cpp-blue mb-2">
+                    {founder.name}
+                  </h3>
+                  <p className="text-cpp-accent font-medium mb-4">
+                    {founder.title}
+                  </p>
+                  <p className="text-gray-700">
+                    {founder.bio}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         
-        <div className="mt-16 bg-white p-8 lg:p-12 rounded-lg shadow-lg">
+        <div className="mt-24 bg-white p-8 lg:p-12 rounded-lg shadow-lg border border-cpp-accent/10">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
             <div className="lg:col-span-3">
               <h3 className="text-2xl font-montserrat font-bold text-cpp-blue mb-4">
@@ -78,13 +122,13 @@ const AboutSection = () => {
                   technology into practical solutions that deliver measurable business results."
                 </p>
                 <div className="mt-4 flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-cpp-blue mr-4"></div>
+                  <div className="w-12 h-12 rounded-full bg-cpp-blue mr-4 flex items-center justify-center text-white font-bold">RC</div>
                   <div>
                     <h4 className="font-montserrat font-medium text-cpp-blue">
-                      Richard Covington
+                      Richard Covington & Sarah Place
                     </h4>
                     <p className="text-sm text-gray-600">
-                      Founder & CEO
+                      Co-Founders
                     </p>
                   </div>
                 </div>

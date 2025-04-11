@@ -47,9 +47,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#home" className="flex items-center space-x-2">
-              <span className="text-cpp-blue font-montserrat font-bold text-xl md:text-2xl">
-                Covington Place Partners
-              </span>
+              <img 
+                src="/lovable-uploads/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
+                alt="Covington Place Partners Logo" 
+                className="h-12 w-auto"
+              />
             </a>
           </div>
           
@@ -69,7 +71,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="font-inter text-cpp-blue hover:text-cpp-light-blue transition-colors"
+                  className="font-inter text-cpp-blue hover:text-cpp-accent transition-colors"
                 >
                   {link.name}
                 </a>
