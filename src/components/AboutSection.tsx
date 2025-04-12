@@ -36,7 +36,7 @@ const AboutSection = () => {
     },
     {
       name: "John Cage",
-      title: "Transformation Lead",
+      title: "Head of Transformation",
       bio: "Former VP of Enterprise Support Services, Sykes Enterprises. Former VP, CoreExpress Founder and Investor, Lit.Ai",
       imgUrl: "/lovable-uploads/88dfe074-2883-4c83-9054-8ad10ac731b7.png"
     },
@@ -45,6 +45,12 @@ const AboutSection = () => {
       title: "Consumer Strategy & Engagement",
       bio: "Former EVP, Wunderman Thompson Health. Managing Partner, JH Marketing Group.",
       imgUrl: "/lovable-uploads/2248b558-817a-46c4-8ad2-2ee443b6c186.png"
+    },
+    {
+      name: "Ben Vierck",
+      title: "Head of Technology",
+      bio: "Founder of Positronic AI and co-founder of Devfarm Software, with a history of leadership at Fortune 100 companies.",
+      imgUrl: "/lovable-uploads/personimg.png"
     }
   ];
 
@@ -88,7 +94,7 @@ const AboutSection = () => {
           Leadership Team
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {founders.map((founder, index) => (
               <div key={index} className="flex flex-col items-center text-center">
                 <div className="w-48 h-48 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden p-1 mb-6">

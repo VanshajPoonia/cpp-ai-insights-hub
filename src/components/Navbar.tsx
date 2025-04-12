@@ -13,13 +13,13 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Our Team", href: "#leaders" },
     { name: "Services", href: "#services" },
-    { name: "About Us", href: "#about" },
+    { name: "Methodology", href: "#ai-methodology" },
     { name: "Ai Landscape", href: "#ai-scale" },
     { name: "Differentiators", href: "#why-us" },
-    { name: "Methodology", href: "#ai-methodology" },
-    { name: "Contact", href: "#contact" },
+    { name: "Our Team", href: "#leaders" },
+    { name: "About Us", href: "#about" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
 //   return (

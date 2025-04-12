@@ -12,7 +12,7 @@ const WhyUsSection = () => {
       description: "We recommend solutions based on your needs, not our partnerships, ensuring you get the best fit for your business."
     },
     {
-      title: "Focus on business questions, not technology questions",
+      title: "Focus on business strategy and results, not industry hype.",
       description: "We understand the objectives of your business and then tailor the solutions."
     },
     {

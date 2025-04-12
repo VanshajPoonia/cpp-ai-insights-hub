@@ -64,7 +64,7 @@ const Hero = () => {
             {/* Floating Labels */}
             <div className="absolute bottom-[-30px] right-[-20px] bg-white p-5 rounded-lg shadow-lg">
               <h3 className="font-montserrat font-semibold text-cpp-accent">
-                10+ Years
+                20+ Years
               </h3>
               <p className="text-sm text-gray-600">
                 Consulting Experience
