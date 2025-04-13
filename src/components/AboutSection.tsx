@@ -42,7 +42,7 @@ const AboutSection = () => {
     },
     {
       name: "Jennifer Hickman",
-      title: "Consumer Strategy & Engagement",
+      title: "Advisor - Consumer Experience",
       bio: "Former EVP, Wunderman Thompson Health. Managing Partner, JH Marketing Group.",
       imgUrl: "/lovable-uploads/2248b558-817a-46c4-8ad2-2ee443b6c186.png"
     },
@@ -50,7 +50,7 @@ const AboutSection = () => {
       name: "Ben Vierck",
       title: "Head of Technology",
       bio: "Founder of Positronic AI and co-founder of Devfarm Software, with a history of leadership at Fortune 100 companies.",
-      imgUrl: "/lovable-uploads/personimg.png"
+      imgUrl: "/lovable-uploads/image_bw.png"
     }
   ];
 
