@@ -22,7 +22,7 @@ const Index = () => {
       <AISpectrumSection />
       <WhyUsSection />
       <AiConsultingMethodology />
-      <TestimonialsSection />
+      {/*<TestimonialsSection />*/}
       <ContactSection />
       <Footer />
     </div>
