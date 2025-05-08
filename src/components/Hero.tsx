@@ -26,8 +26,7 @@ const Hero = () => {
           <span className="text-cpp-accent">From Vision to Value</span>
         </h1>
         <p className="text-base md:text-lg font-inter text-white/90 mb-6 max-w-2xl">
-          Covington Place Partners helps clients achieve their goals, solve complex problems, 
-          and enhance performance by simplifying AI implementation for practical business solutions.
+        We enable mid-market enterprises to thrive in the AI era by designing solutions to optimize operational efficiency, elevate user experience, and drive scalable value.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
 
