@@ -1,14 +1,27 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => { 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const navigate = useNavigate();
+
+  const handleNavigation = (section: string) => {
+    // First navigate to home
+    navigate('/');
+    // Then scroll to the section after a small delay
+    setTimeout(() => {
+      const element = document.getElementById(section.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -48,11 +61,9 @@ const Navbar = () => {
                   ? "bg-cpp-accent hover:bg-cpp-light-accent text-white" 
                   : "text-white hover:text-cpp-accent"
                 }
-                asChild
+                onClick={() => handleNavigation(link.href)}
               >
-                <Link to={link.href.replace('#', '')}>
-                  {link.name}
-                </Link>
+                {link.name}
               </Button>
             ))}
           </div>
@@ -79,14 +90,16 @@ const Navbar = () => {
         <div className="md:hidden bg-cpp-blue border-t border-cpp-accent/30 animate-fade-in">
           <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) => (
-              <Link
+              <button
                 key={link.name}
-                to={link.href.replace('#', '')}
+                onClick={() => {
+                  handleNavigation(link.href);
+                  setIsMenuOpen(false);
+                }}
                 className="block py-3 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-colors duration-200"
-                onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
-              </Link>
+              </button>
             ))}
           </div>
         </div>
