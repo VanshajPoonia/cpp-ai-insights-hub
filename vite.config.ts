@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/cpp-ai-insights-hub/' : '/',
+  base: "/",
   server: {
     host: "::",
     port: 8080,
@@ -21,8 +21,9 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
+    outDir: "dist",
+    assetsDir: "assets",
     emptyOutDir: true,
+    sourcemap: true
   },
 }));
