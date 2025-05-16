@@ -26,31 +26,31 @@ const AboutSection = () => {
       name: "Mike Burns",
       title: "Head of Growth",
       bio: "Former Chief Strategy Officer of Veil. Former President, Wunderman Thompson Health Former EVP, Marketing Direct.",
-      imgUrl: "/lovable-uploads/faf2caa8-3fc5-4d36-9ccb-4892bc452a60.png"
+      imgUrl: "/assets/faf2caa8-3fc5-4d36-9ccb-4892bc452a60.png"
     },
     {
       name: "Shea Long",
       title: "Head of Innovation",
       bio: "Former Chief Product Officer, Alivi Health. Former Head of Commercial Innovation, Centene, ModivCare, Papa Health, EmpowerMe Wellness",
-      imgUrl: "/lovable-uploads/e74dcb32-af0d-4c86-933b-1c352325faf3.png"
+      imgUrl: "/assets/e74dcb32-af0d-4c86-933b-1c352325faf3.png"
     },
     {
       name: "John Cage",
       title: "Head of Transformation",
       bio: "Former VP of Enterprise Support Services, Sykes Enterprises. Former VP, CoreExpress Founder and Investor, Lit.Ai",
-      imgUrl: "/lovable-uploads/88dfe074-2883-4c83-9054-8ad10ac731b7.png"
+      imgUrl: "/assets/88dfe074-2883-4c83-9054-8ad10ac731b7.png"
     },
     {
       name: "Jennifer Hickman",
       title: "Advisor - Consumer Experience",
       bio: "Former EVP, Wunderman Thompson Health. Managing Partner, JH Marketing Group.",
-      imgUrl: "/lovable-uploads/2248b558-817a-46c4-8ad2-2ee443b6c186.png"
+      imgUrl: "/assets/2248b558-817a-46c4-8ad2-2ee443b6c186.png"
     },
     {
       name: "Ben Vierck",
       title: "Head of Technology",
       bio: "Founder of Positronic AI and co-founder of Devfarm Software, with a history of leadership at Fortune 100 companies.",
-      imgUrl: "/lovable-uploads/image_bw.png"
+      imgUrl: "/assets/image_bw.png"
     }
   ];
 

@@ -11,8 +11,13 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Videos", href: "/videos" },
+    { name: "Services", href: "#services" },
+    { name: "Methodology", href: "#ai-methodology" },
+    { name: "Ai Landscape", href: "#ai-scale" },
+    { name: "Differentiators", href: "#why-us" },
     { name: "Our Team", href: "#leaders" },
+    { name: "About Us", href: "#about" },
+    { name: "Videos", href: "/videos" },
     { name: "Contact Us", href: "#contact" },
   ];
 
@@ -24,7 +29,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#home" className="flex items-center space-x-2 ml-2">
               <img 
-                src="/lovable-uploads/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
+                src="/assets/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
                 className="h-16 w-auto"
               />
