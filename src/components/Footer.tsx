@@ -19,7 +19,7 @@ const Footer = () => {
               <li><a href="#" className="text-white/70 hover:text-white text-sm">Cookie Policy</a></li>
             </ul>
             <a 
-              href="https://www.linkedin.com/company/covington-place-partners" 
+              href="https://www.linkedin.com/company/covington-place-partners-cpp/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-cpp-accent transition-colors duration-200"
