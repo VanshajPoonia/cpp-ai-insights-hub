@@ -29,13 +29,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo on the left with more padding */}
           <div className="flex items-center">
-            <a href="#home" className="flex items-center space-x-2 ml-2">
+            <Link to="/" className="flex items-center space-x-2 ml-2">
               <img 
                 src="/assets/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
                 className="h-16 w-auto"
               />
-            </a>
+            </Link>
           </div>
           
           {/* Desktop Menu - Positioned between center and right */}
