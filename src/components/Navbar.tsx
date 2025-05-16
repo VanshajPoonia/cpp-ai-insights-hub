@@ -50,7 +50,9 @@ const Navbar = () => {
                 }
                 asChild
               >
-                <a href={link.href}>{link.name}</a>
+                <Link to={link.href.replace('#', '')}>
+                  {link.name}
+                </Link>
               </Button>
             ))}
           </div>
@@ -77,14 +79,14 @@ const Navbar = () => {
         <div className="md:hidden bg-cpp-blue border-t border-cpp-accent/30 animate-fade-in">
           <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href.replace('#', '')}
                 className="block py-3 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
