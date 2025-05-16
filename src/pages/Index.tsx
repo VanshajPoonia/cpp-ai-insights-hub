@@ -18,6 +18,7 @@ const Index = () => {
 
       <Navbar />
       <Hero />
+      <Analytics />
       <AboutSection />
       <ServicesSection />
       <AISpectrumSection />
