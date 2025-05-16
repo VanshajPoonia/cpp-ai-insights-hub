@@ -12,7 +12,13 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleNavigation = (section: string) => {
-    // First navigate to home
+    // If it's the Videos link, just navigate directly
+    if (section === '/videos') {
+      navigate(section);
+      return;
+    }
+    
+    // For other sections, go to home first
     navigate('/');
     // Then scroll to the section after a small delay
     setTimeout(() => {
