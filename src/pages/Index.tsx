@@ -2,7 +2,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
-import { Analytics } from "@vercel/analytics/next"
 import ServicesSection from "@/components/ServicesSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -18,7 +17,6 @@ const Index = () => {
 
       <Navbar />
       <Hero />
-      <Analytics />
       <AboutSection />
       <ServicesSection />
       <AISpectrumSection />
