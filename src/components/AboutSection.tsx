@@ -26,31 +26,36 @@ const AboutSection = () => {
       name: "Mike Burns",
       title: "Head of Growth",
       bio: "Former Chief Strategy Officer of Veil. Former President, Wunderman Thompson Health Former EVP, Marketing Direct.",
-      imgUrl: "/assets/faf2caa8-3fc5-4d36-9ccb-4892bc452a60.png"
+      imgUrl: "/assets/faf2caa8-3fc5-4d36-9ccb-4892bc452a60.png",
+      linkedinUrl: "https://www.linkedin.com/in/sample-profile-1"
     },
     {
       name: "Shea Long",
       title: "Head of Innovation",
       bio: "Former Chief Product Officer, Alivi Health. Former Head of Commercial Innovation, Centene, ModivCare, Papa Health, EmpowerMe Wellness",
-      imgUrl: "/assets/e74dcb32-af0d-4c86-933b-1c352325faf3.png"
+      imgUrl: "/assets/e74dcb32-af0d-4c86-933b-1c352325faf3.png",
+      linkedinUrl: "https://www.linkedin.com/in/sample-profile-2"
     },
     {
       name: "John Cage",
       title: "Head of Transformation",
       bio: "Former VP of Enterprise Support Services, Sykes Enterprises. Former VP, CoreExpress Founder and Investor, Lit.AI",
-      imgUrl: "/assets/88dfe074-2883-4c83-9054-8ad10ac731b7.png"
+      imgUrl: "/assets/88dfe074-2883-4c83-9054-8ad10ac731b7.png",
+      linkedinUrl: "https://www.linkedin.com/in/sample-profile-3"
     },
     {
       name: "Jennifer Hickman",
       title: "Advisor - Consumer Experience",
       bio: "Former EVP, Wunderman Thompson Health. Managing Partner, JH Marketing Group.",
-      imgUrl: "/assets/2248b558-817a-46c4-8ad2-2ee443b6c186.png"
+      imgUrl: "/assets/2248b558-817a-46c4-8ad2-2ee443b6c186.png",
+      linkedinUrl: "https://www.linkedin.com/in/sample-profile-4"
     },
     {
       name: "Ben Vierck",
       title: "Head of Technology",
       bio: "Founder of Positronic AI and co-founder of Devfarm Software, with a history of leadership at Fortune 100 companies.",
-      imgUrl: "/assets/image_bw.png"
+      imgUrl: "/assets/image_bw.png",
+      linkedinUrl: "https://www.linkedin.com/in/sample-profile-5"
     }
   ];
 
@@ -96,14 +101,19 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {founders.map((founder, index) => (
               <div key={index} className="flex flex-col items-center text-center">
-                <div className="w-48 h-48 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden p-1 mb-6">
+                <a 
+                  href={founder.linkedinUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-48 h-48 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden p-1 mb-6 hover:scale-105 transition-transform duration-300 cursor-pointer"
+                >
                   <Avatar className="w-44 h-44">
                     <AvatarImage src={founder.imgUrl} alt={founder.name} className="object-cover" />
                     <AvatarFallback className="bg-white text-5xl font-bold text-cpp-accent">
                       {founder.name.charAt(0)}
                     </AvatarFallback>
                   </Avatar>
-                </div>
+                </a>
                 
                 <div className="flex-1 text-center">
                   <h3 className="text-xl font-montserrat font-bold text-cpp-blue mb-2">

@@ -3,43 +3,46 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Link, useNavigate } from 'react-router-dom';
-
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => { 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useIsMobile();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleNavigation = (section: string) => {
-    // If it's the Videos link, just navigate directly
-    if (section === '/videos') {
+    // If it's a direct route, navigate to it
+    if (section.startsWith('/')) {
       navigate(section);
       return;
     }
     
-    // For other sections, go to home first
-    navigate('/');
-    // Then scroll to the section after a small delay
-    setTimeout(() => {
+    // For sections on the home page
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(section.replace('#', ''));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
       const element = document.getElementById(section.replace('#', ''));
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 100);
+    }
   };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Services", href: "#services" },
-    { name: "Methodology", href: "#ai-methodology" },
-    { name: "AI Landscape", href: "#ai-scale" },
-    { name: "Differentiators", href: "#why-us" },
-    { name: "Our Team", href: "#leaders" },
-    { name: "About Us", href: "#about" },
+    { name: "Services", href: "/services" },
+    { name: "About", href: "/about" },
     { name: "Videos", href: "/videos" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "Our Team", href: "/team" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -48,7 +51,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo on the left with more padding */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2 ml-2">
+            <Link to="/" className="flex items-center space-x-2 ml-6">
               <img 
                 src="/assets/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
@@ -58,7 +61,7 @@ const Navbar = () => {
           </div>
           
           {/* Desktop Menu - Positioned between center and right */}
-          <div className="hidden md:flex items-center space-x-6 justify-end">
+          <div className="hidden md:flex items-center space-x-6 mr-8">
             {navLinks.map((link, index) => (
               <Button 
                 key={link.name}
@@ -93,7 +96,7 @@ const Navbar = () => {
       
       {/* Mobile Menu - Full width with improved visibility */}
       {isMenuOpen && (
-        <div className="md:hidden bg-cpp-blue border-t border-cpp-accent/30 animate-fade-in">
+        <div className="md:hidden bg-cpp-blue border-t border-cpp-accent/30 animate-fade-in shadow-lg">
           <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) => (
               <button
@@ -102,7 +105,7 @@ const Navbar = () => {
                   handleNavigation(link.href);
                   setIsMenuOpen(false);
                 }}
-                className="block py-3 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-colors duration-200"
+                className="block w-full text-left py-4 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-colors duration-200 border-b border-cpp-accent/10"
               >
                 {link.name}
               </button>

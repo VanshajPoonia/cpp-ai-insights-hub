@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
 
 const ContactSection = () => {
@@ -12,7 +13,8 @@ const ContactSection = () => {
     name: "",
     email: "",
     company: "",
-    message: ""
+    message: "",
+    agreeToTerms: false
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -23,8 +25,23 @@ const ContactSection = () => {
     }));
   };
 
+  const handleCheckboxChange = (checked: boolean) => {
+    setFormData(prev => ({
+      ...prev,
+      agreeToTerms: checked
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.agreeToTerms) {
+      toast({
+        title: "Agreement Required",
+        description: "Please agree to the Terms of Use to continue.",
+        variant: "destructive"
+      });
+      return;
+    }
     toast({
       title: "Thank you for reaching out!",
       description: "We'll get back to you as soon as possible.",
@@ -33,7 +50,8 @@ const ContactSection = () => {
       name: "",
       email: "",
       company: "",
-      message: ""
+      message: "",
+      agreeToTerms: false
     });
   };
 
@@ -73,25 +91,12 @@ const ContactSection = () => {
               </p>
               <p className="text-white/80">
                 Email: Shea@covingtonplacepartners.com
-
               </p>
             </div>
-            
-            {/* <div>
-              <h3 className="text-xl font-montserrat font-semibold mb-4 flex items-center">
-                <Mail className="mr-3 h-5 w-5" />
-                Business Hours
-              </h3>
-              <p className="text-white/80">
-                Monday - Friday: 9:00 AM - 6:00 PM<br />
-                Saturday - Sunday: Closed
-              </p>
-            </div> */}
           </div>
           
           <div className="lg:col-span-2">
-            {/* <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg"> */}
-            <form action="https://formsubmit.co/Shea@covingtonplacepartners.com" method="POST" className="bg-white p-8 rounded-lg text-gray-800">
+            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg text-gray-800">
               <h3 className="text-xl font-montserrat font-semibold text-cpp-blue mb-6">
                 Send Us a Message
               </h3>
@@ -104,6 +109,8 @@ const ContactSection = () => {
                   <Input
                     id="name"
                     name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full"
                     required
                   />
@@ -117,6 +124,8 @@ const ContactSection = () => {
                     id="email"
                     name="email"
                     type="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full"
                     required
                   />
@@ -130,6 +139,8 @@ const ContactSection = () => {
                 <Input
                   id="company"
                   name="company"
+                  value={formData.company}
+                  onChange={handleChange}
                   className="w-full"
                 />
               </div>
@@ -142,15 +153,33 @@ const ContactSection = () => {
                 <Textarea
                   id="message"
                   name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full h-32"
                   required
                 />
               </div>
               
               <div className="mt-6">
+                <div className="flex items-start space-x-2">
+                  <Checkbox
+                    id="agreeToTerms"
+                    checked={formData.agreeToTerms}
+                    onCheckedChange={handleCheckboxChange}
+                    className="mt-1"
+                  />
+                  <label htmlFor="agreeToTerms" className="text-xs text-gray-600 leading-tight">
+                    I agree to the below Terms of Use <span className="text-red-500">(Required)</span><br/>
+                    <span className="text-xs">By submitting this form you consent to receive phone calls, text messages and emails from Covington Place Partners. It is not a condition of purchasing any goods or services. You can opt out at any time, message/data rates may apply, and opting-in includes acceptance of the Privacy Policy and Terms of Use. Communications through this website or via email are not encrypted and are not necessarily secure. Use of the internet or email is for your convenience only, and by using them, you assume the risk of unauthorized use.</span>
+                  </label>
+                </div>
+              </div>
+              
+              <div className="mt-6">
                 <Button 
                   type="submit"
                   className="w-full bg-cpp-accent hover:bg-cpp-light-accent text-white"
+                  disabled={!formData.agreeToTerms}
                 >
                   Send Message
                 </Button>
