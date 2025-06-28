@@ -11,38 +11,26 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleNavigation = (section: string) => {
-    // If it's a direct route, navigate to it
-    if (section.startsWith('/')) {
-      navigate(section);
-      return;
-    }
-    
-    // For sections on the home page
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(() => {
-        const element = document.getElementById(section.replace('#', ''));
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    } else {
-      const element = document.getElementById(section.replace('#', ''));
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    // Smooth scroll to top after navigation
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+    setIsMenuOpen(false);
   };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
     { name: "Services", href: "/services" },
-    { name: "About", href: "/about" },
-    { name: "Videos", href: "/videos" },
+    { name: "Methodology", href: "/methodology" },
+    { name: "AI Landscape", href: "/ai-landscape" },
+    { name: "Differentiators", href: "/differentiators" },
     { name: "Our Team", href: "/team" },
-    { name: "Contact", href: "/contact" },
+    { name: "About Us", href: "/about" },
+    { name: "Videos", href: "/videos" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -51,7 +39,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo on the left with more padding */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2 ml-6">
+            <Link to="/" className="flex items-center space-x-2 ml-6" onClick={() => handleNavigation('/')}>
               <img 
                 src="/assets/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
@@ -61,14 +49,14 @@ const Navbar = () => {
           </div>
           
           {/* Desktop Menu - Positioned between center and right */}
-          <div className="hidden md:flex items-center space-x-6 mr-8">
+          <div className="hidden lg:flex items-center space-x-4 mr-8">
             {navLinks.map((link, index) => (
               <Button 
                 key={link.name}
                 variant={index === navLinks.length - 1 ? "default" : "ghost"} 
                 className={index === navLinks.length - 1 
-                  ? "bg-cpp-accent hover:bg-cpp-light-accent text-white" 
-                  : "text-white hover:text-cpp-accent"
+                  ? "bg-cpp-accent hover:bg-cpp-light-accent text-white text-sm px-3 py-2" 
+                  : "text-white hover:text-cpp-accent text-sm px-3 py-2"
                 }
                 onClick={() => handleNavigation(link.href)}
               >
@@ -78,7 +66,7 @@ const Navbar = () => {
           </div>
           
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="p-2 text-white focus:outline-none"
@@ -96,15 +84,12 @@ const Navbar = () => {
       
       {/* Mobile Menu - Full width with improved visibility */}
       {isMenuOpen && (
-        <div className="md:hidden bg-cpp-blue border-t border-cpp-accent/30 animate-fade-in shadow-lg">
+        <div className="lg:hidden bg-cpp-blue border-t border-cpp-accent/30 animate-fade-in shadow-lg">
           <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) => (
               <button
                 key={link.name}
-                onClick={() => {
-                  handleNavigation(link.href);
-                  setIsMenuOpen(false);
-                }}
+                onClick={() => handleNavigation(link.href)}
                 className="block w-full text-left py-4 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-colors duration-200 border-b border-cpp-accent/10"
               >
                 {link.name}

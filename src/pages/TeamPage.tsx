@@ -1,7 +1,6 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ShieldCheck, Users, Target } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const TeamPage = () => {
@@ -59,31 +58,32 @@ const TeamPage = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {/* Better grid layout with responsive design */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
               {founders.map((founder, index) => (
-                <div key={index} className="flex flex-col items-center text-center bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div key={index} className="flex flex-col items-center text-center bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                   <a 
                     href={founder.linkedinUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="w-32 h-32 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden p-1 mb-6 hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    className="w-24 h-24 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden p-1 mb-6 hover:scale-105 transition-transform duration-300 cursor-pointer"
                   >
-                    <Avatar className="w-28 h-28">
+                    <Avatar className="w-20 h-20">
                       <AvatarImage src={founder.imgUrl} alt={founder.name} className="object-cover" />
-                      <AvatarFallback className="bg-white text-3xl font-bold text-cpp-accent">
+                      <AvatarFallback className="bg-white text-2xl font-bold text-cpp-accent">
                         {founder.name.charAt(0)}
                       </AvatarFallback>
                     </Avatar>
                   </a>
                   
                   <div className="flex-1 text-center">
-                    <h3 className="text-xl font-montserrat font-bold text-cpp-blue mb-2">
+                    <h3 className="text-lg font-montserrat font-bold text-cpp-blue mb-2">
                       {founder.name}
                     </h3>
-                    <p className="text-cpp-accent font-medium mb-4">
+                    <p className="text-cpp-accent font-medium text-sm mb-3">
                       {founder.title}
                     </p>
-                    <p className="text-gray-700 text-sm">
+                    <p className="text-gray-700 text-xs leading-relaxed">
                       {founder.bio}
                     </p>
                   </div>
