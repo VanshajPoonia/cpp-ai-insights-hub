@@ -34,7 +34,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Services", href: "#services" },
     { name: "Methodology", href: "#ai-methodology" },
-    { name: "Ai Landscape", href: "#ai-scale" },
+    { name: "AI Landscape", href: "#ai-scale" },
     { name: "Differentiators", href: "#why-us" },
     { name: "Our Team", href: "#leaders" },
     { name: "About Us", href: "#about" },

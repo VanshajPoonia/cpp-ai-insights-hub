@@ -5,14 +5,14 @@ const WhyUsSection = () => {
   const reasons = [
     {
       title: "AI Expertise with Business Acumen",
-      description: "Our team combines deep technical knowledge with extensive business experience to deliver practical AI solutions."
+      description: "With over 20 years of consulting experience, our team combines deep technical knowledge with extensive business experience to deliver practical AI solutions."
     },
     {
       title: "Vendor-Agnostic Approach",
       description: "We recommend solutions based on your needs, not our partnerships, ensuring you get the best fit for your business."
     },
     {
-      title: "Focus on business strategy and results, not industry hype.",
+      title: "Consulting for business strategy and results, not industry hype.",
       description: "We understand the objectives of your business and then tailor the solutions."
     },
     {
@@ -30,7 +30,7 @@ const WhyUsSection = () => {
           </h2>
           <div className="w-24 h-1 bg-cpp-accent mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          CPP prides itself on being a trusted partner to our clients. Advisory First, Vendor Second
+          CPP prides itself on being a trusted partner to clients across healthcare, telecommunications, manufacturing, and other industries.
           </p>
         </div>
         
@@ -54,9 +54,9 @@ const WhyUsSection = () => {
           </div>
 
           <div className="order-1 lg:order-2 bg-white p-8 rounded-lg shadow-lg">
-  <h3 className="text-2xl font-montserrat font-bold text-cpp-blue mb-6 text-center">
+  <h2 className="text-2xl font-montserrat font-bold text-cpp-blue mb-6 text-center">
     Our Difference
-  </h3>
+  </h2>
 
   <div className="space-y-6">
     {[
@@ -65,7 +65,7 @@ const WhyUsSection = () => {
         desc: "We do what is right for the client above all. Platforms are not our first priority.",
       },
       {
-        title: "Tailored Solutions",
+        title: "Tailored Enterprise Business Solutions",
         desc: "The value that we bring as consultants is to work with our clients to identify needs and pain points first.",
       },
       {
@@ -78,9 +78,9 @@ const WhyUsSection = () => {
           <Check className="text-cpp-accent h-6 w-6" />
         </div>
         <div className="ml-4">
-          <h4 className="text-lg font-medium text-cpp-blue mb-1">
+          <h3 className="text-lg font-medium text-cpp-blue mb-1">
             {item.title}
-          </h4>
+          </h3>
           <p className="text-gray-600">{item.desc}</p>
         </div>
       </div>

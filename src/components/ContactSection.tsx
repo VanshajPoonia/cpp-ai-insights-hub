@@ -41,13 +41,12 @@ const ContactSection = () => {
     <section id="contact" className="py-16 md:py-24 bg-cpp-blue text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-4 text-white">
             Get in Touch
           </h2>
           <div className="w-24 h-1 bg-cpp-accent mx-auto mb-6"></div>
           <p className="text-lg max-w-3xl mx-auto">
-            Ready to explore how AI can transform your business? Contact us today 
-            to schedule a consultation with our team of experts.
+            Ready to explore how AI can transform your business? Contact us today to schedule a consultation with our team of advisors.
           </p>
         </div>
         
@@ -59,18 +58,18 @@ const ContactSection = () => {
                 Our Motto
               </h3>
               <p className="text-white/80"><br/>
-              Ai made simple. <br/>
+              AI made simple. <br/>
                Innovation made possible.
               </p>
             </div>
             
             <div>
-              <h3 className="text-xl font-montserrat font-semibold mb-4 flex items-center">
+              <h3 className="text-xl font-montserrat font-semibold mb-4 flex items-center text-white">
                 <Phone className="mr-3 h-5 w-5" />
                 Contact Details
               </h3>
               <p className="text-white/80 mb-2">
-                Phone: +1 314-960-0015
+                Phone: (314) 960-0015
               </p>
               <p className="text-white/80">
                 Email: Shea@covingtonplacepartners.com
@@ -137,8 +136,8 @@ const ContactSection = () => {
               
               <div className="mt-6">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Your Message<br/>
-                  (Do let us know where you are on the Ai usage. We meet you where you are on the maturity curve.)
+                  Share a few words about where your business is in terms of AI usage<br/>
+                  (Do let us know where you are on the AI usage. We meet you where you are on the maturity curve.)
                 </label>
                 <Textarea
                   id="message"

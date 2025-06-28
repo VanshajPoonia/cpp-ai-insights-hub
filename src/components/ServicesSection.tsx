@@ -11,17 +11,17 @@ const ServicesSection = () => {
     },
     {
       icon: <BrainCircuit className="h-10 w-10 text-cpp-accent" />,
-      title: "Ai Readiness",
+      title: "AI Readiness",
       description: "We help organizations develop comprehensive AI strategies aligned with business goals, identifying high-impact opportunities and creating implementation roadmaps."
     },
     {
       icon: <LineChart className="h-10 w-10 text-cpp-accent" />,
-      title: "Ai Roadmap",
+      title: "AI Solutions Roadmap",
       description: "Our consultants analyze your operations to identify where AI can enhance efficiency, reduce costs, and improve overall business performance."
     },
     {
       icon: <Settings className="h-10 w-10 text-cpp-accent" />,
-      title: "Implementation Support",
+      title: "AI Implementation Support",
       description: "From vendor selection to change management, we provide end-to-end support for successful AI implementation and adoption."
     }
   ];

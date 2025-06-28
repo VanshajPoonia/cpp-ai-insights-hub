@@ -16,7 +16,7 @@ const AboutSection = () => {
     },
     {
       icon: <Target className="h-12 w-12 text-cpp-accent" />,
-      title: "Results-Driven",
+      title: "Results-Driven Consulting",
       description: "We focus on delivering measurable results that drive meaningful business outcomes."
     }
   ];
@@ -37,7 +37,7 @@ const AboutSection = () => {
     {
       name: "John Cage",
       title: "Head of Transformation",
-      bio: "Former VP of Enterprise Support Services, Sykes Enterprises. Former VP, CoreExpress Founder and Investor, Lit.Ai",
+      bio: "Former VP of Enterprise Support Services, Sykes Enterprises. Former VP, CoreExpress Founder and Investor, Lit.AI",
       imgUrl: "/assets/88dfe074-2883-4c83-9054-8ad10ac731b7.png"
     },
     {
@@ -63,8 +63,7 @@ const AboutSection = () => {
           </h2>
           <div className="w-24 h-1 bg-cpp-accent mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Our team combines deep expertise in AI technologies 
-            with seasoned business acumen to bridge the gap between complex technology and real-world application.
+            With over 20 years of consulting experience, our team combines deep expertise in AI technologies with seasoned business acumen to bridge the gap between intelligent solutions and real-world application.
           </p>
         </div>
         
@@ -90,9 +89,9 @@ const AboutSection = () => {
         {/* Leadership Section */}
         <section id="leaders">
         <div className="mt-24">
-          <h2 className="text-3xl font-montserrat font-bold text-cpp-blue text-center mb-16">
+          <p className="text-3xl font-montserrat font-bold text-cpp-blue text-center mb-16">
           Leadership Team
-          </h2>
+          </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {founders.map((founder, index) => (
@@ -126,14 +125,14 @@ const AboutSection = () => {
         <div className="mt-24 bg-white p-8 lg:p-12 rounded-lg shadow-lg border border-cpp-accent/10">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
             <div className="lg:col-span-3">
-              <h3 className="text-2xl font-montserrat font-bold text-cpp-blue mb-4">
+              <h2 className="text-2xl font-montserrat font-bold text-cpp-blue mb-4">
                 Our Mission
-              </h3>
+              </h2>
               <p className="text-gray-700 mb-6">
-              We enable mid-market enterprises to thrive in the AI era by designing solutions to optimize operational efficiency, elevate user experience, and drive scalable value.
+             As an AI consultant group, Covington Place Partners enables mid-market enterprises to thrive in the artificial intelligence era by designing solutions to optimize operational efficiency, elevate user experience, and drive scalable value.
               </p>
               <p className="text-gray-700">
-              We’re selling consulting services based upon trust, experience and confidence that is derived from a valued, unbiased, and trusted partner. 
+              Our role as AI consultants is to serve as an unbiased, trusted partner in facilitating the integration, adoption, and continuous improvement of solutions that power businesses forward. 
               </p>
             </div>
             <div className="lg:col-span-2 flex justify-center items-center">

@@ -10,9 +10,9 @@ const Hero = () => {
 
     {/* Logo + Name + Motto Block */}
     <div className="flex flex-col items-center text-center mb-10 animate-fade-in-up">
-      <h1 className="text-white font-semibold text-3xl sm:text-4xl">
+      <p className="text-white font-semibold text-3xl sm:text-4xl">
         Covington Place Partners
-      </h1>
+      </p>
       <p className="text-white text-sm sm:text-base italic font-playfair tracking-wide">
         AI made simple. Innovation made possible.
       </p>
@@ -22,11 +22,15 @@ const Hero = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div className="animate-fade-in-up">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-montserrat font-bold text-white leading-snug mb-4">
-          Guiding Your AI Journey <br />
-          <span className="text-cpp-accent">From Vision to Value</span>
+          Your AI Business Solutions Advisor Group <br />
         </h1>
+        
+         <h2 className="text-2xl md:text-3xl lg:text-4xl font-montserrat font-bold text-white leading-snug mb-4">
+          Guiding Your Artificial Intelligence Journey <br />
+          <span className="text-cpp-accent">From Vision to Value</span>
+         </h2>
         <p className="text-base md:text-lg font-inter text-white/90 mb-6 max-w-2xl">
-        We enable mid-market enterprises to thrive in the AI era by designing solutions to optimize operational efficiency, elevate user experience, and drive scalable value.
+        As an AI consultant group, Covington Place Partners enables mid-market enterprises to thrive in the artificial intelligence era by designing solutions to optimize operational efficiency, elevate user experience, and drive scalable value.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
 
@@ -62,17 +66,17 @@ const Hero = () => {
             
             {/* Floating Labels */}
             <div className="absolute bottom-[-30px] right-[-20px] bg-white p-5 rounded-lg shadow-lg">
-              <h3 className="font-montserrat font-semibold text-cpp-accent">
+              <p className="font-montserrat font-semibold text-cpp-accent">
                 20+ Years
-              </h3>
+              </p>
               <p className="text-sm text-gray-600">
                 Consulting Experience
               </p>
             </div>
             <div className="absolute top-[-30px] left-[-20px] bg-white p-5 rounded-lg shadow-lg">
-              <h3 className="font-montserrat font-semibold text-cpp-blue">
+              <p className="font-montserrat font-semibold text-cpp-blue">
                 AI Specialists
-              </h3>
+              </p>
               <p className="text-sm text-gray-600">
                 Simplified Solutions
               </p>

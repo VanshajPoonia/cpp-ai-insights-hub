@@ -6,25 +6,25 @@ const AiConsultingMethodology = () => {
       icon: <Baby className="h-10 w-10 text-cpp-light-accent" />,
       title: "Crawl",
       description:
-        "Pick a single use-case with a narrow scope and perform a no/low cost Proof of Concept (POC) and measure KPIs vs. Goals.",
+        "We with you to select a narrow-scope use-case to develop a no/low cost Proof of Concept and establish goal-focused KPIs.",
     },
     {
       icon: <PersonStanding className="h-10 w-10 text-cpp-light-accent" />,
       title: "Walk",
       description:
-        "Turn the PoC Use Case into full Production for single or limited department or Product after improvements and iteration.  Focus on ROI and KPIs.",
+        "Deploy validated proof of concept cases to sample production- or department-level application. Focus on finely tuning case solutions to meet KPIs.",
     },
     {
       icon: <Activity className="h-10 w-10 text-cpp-light-accent" />,
       title: "Run",
       description:
-        "Expand the Limited deployment of the Use Case to an additional Product or Division of the company.  Further iteration and improvement.  Focus on ROI and KPIs.",
+        "Expand limited deployment of the use case to  additional products or company divisions for further iteration and improvement. Focus on developing processes so that KPIs show ROI.",
     },
     {
       icon: <Plane className="h-10 w-10 text-cpp-light-accent" />,
       title: "Fly",
       description:
-        "Deploy the use-case company wide.  Add improvements and capabilities.  Additional focus on  KPIs vs. Goals.",
+        "Apply  proven use cases company-wide. Track and monitor performance for ongoing improvement. Focus beyond ROI to achieve organizational goals.",
     },
   ];
 
@@ -37,7 +37,7 @@ const AiConsultingMethodology = () => {
           </h2>
           <div className="w-24 h-1 bg-cpp-accent mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              We meet our clients where they are on the Ai journey. Our phased approach ensures every AI initiative aligns with your business maturity and risk tolerance — from strategy to scalable innovation.
+              We meet our clients where they are on the Ai journey. We meet our clients where they are on their AI adoption journey. Our phased approach ensures every AI initiative aligns with your business maturity and risk tolerance — from strategy to scalable innovation.
           </p>
         </div>
 

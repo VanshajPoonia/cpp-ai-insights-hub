@@ -72,7 +72,7 @@ const AISpectrumSection = () => {
           </h2>
           <div className="w-24 h-1 bg-cpp-accent mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Understand where your organization stands in the AI spectrum — from enhanced tools to fully autonomous systems.
+           From enhanced AI tools to fully autonomous systems, our collaborative approach to enterprise consulting starts with identifying the right solutions for optimal organizational enhancement.
           </p>
         </div>
 
