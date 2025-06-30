@@ -14,8 +14,7 @@ const Footer = () => {
           
           <div className="mt-4 md:mt-0 flex items-center space-x-4">
             <ul className="flex space-x-6">
-              <li><a href="#" className="text-white/70 hover:text-white text-sm">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white text-sm">Terms of Service</a></li>
+              <li><a href="https://covingtonplacepartnersprivacypolicy.pages.dev/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white text-sm">Privacy Policy</a></li>
               <li><a href="#" className="text-white/70 hover:text-white text-sm">Cookie Policy</a></li>
             </ul>
             <a 
