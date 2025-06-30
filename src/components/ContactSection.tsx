@@ -37,7 +37,7 @@ const ContactSection = () => {
     if (!formData.agreeToTerms) {
       toast({
         title: "Agreement Required",
-        description: "Please agree to the Terms of Use to continue.",
+        description: "Please agree to the privacy policy to continue.",
         variant: "destructive"
       });
       return;
@@ -169,8 +169,8 @@ const ContactSection = () => {
                     className="mt-1"
                   />
                   <label htmlFor="agreeToTerms" className="text-xs text-gray-600 leading-tight">
-                    I agree to the below Terms of Use <span className="text-red-500">(Required)</span><br/>
-                    <span className="text-xs">By submitting this form you consent to receive phone calls, text messages and emails from Covington Place Partners. It is not a condition of purchasing any goods or services. You can opt out at any time, message/data rates may apply, and opting-in includes acceptance of the Privacy Policy and Terms of Use. Communications through this website or via email are not encrypted and are not necessarily secure. Use of the internet or email is for your convenience only, and by using them, you assume the risk of unauthorized use.</span>
+                    I agree to the <a href="https://covingtonplacepartnersprivacypolicy.pages.dev/" target="_blank" rel="noopener noreferrer" className="text-cpp-blue hover:underline">Privacy Policy</a> <span className="text-red-500">(Required)</span><br/>
+                    <span className="text-xs">By submitting this form you consent to receive phone calls, text messages and emails from Covington Place Partners. It is not a condition of purchasing any goods or services. You can opt out at any time, message/data rates may apply, and opting-in includes acceptance of the <a href="https://covingtonplacepartnersprivacypolicy.pages.dev/" target="_blank" rel="noopener noreferrer" className="text-cpp-blue hover:underline">Privacy Policy</a>. Communications through this website or via email are not encrypted and are not necessarily secure. Use of the internet or email is for your convenience only, and by using them, you assume the risk of unauthorized use.</span>
                   </label>
                 </div>
               </div>
