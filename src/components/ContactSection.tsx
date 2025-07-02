@@ -147,8 +147,7 @@ const ContactSection = () => {
               
               <div className="mt-6">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Share a few words about where your business is in terms of AI usage<br/>
-                  (Do let us know where you are on the AI usage. We meet you where you are on the maturity curve.)
+                  Ready to explore how AI can transform your business? Contact us today to schedule a consultation with our team of advisors.
                 </label>
                 <Textarea
                   id="message"
