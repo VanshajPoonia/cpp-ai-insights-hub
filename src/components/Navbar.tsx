@@ -11,26 +11,39 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleNavigation = (path: string) => {
-    navigate(path);
-    // Smooth scroll to top after navigation
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
+  const handleNavigation = (sectionId: string) => {
+    // If not on home page, navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 100);
+    } else {
+      // Already on home page, just scroll
+      scrollToSection(sectionId);
+    }
     setIsMenuOpen(false);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Services", href: "/services" },
-    { name: "Methodology", href: "/methodology" },
-    { name: "AI Landscape", href: "/ai-landscape" },
-    { name: "Differentiators", href: "/differentiators" },
+    { name: "Services", sectionId: "services" },
+    { name: "Methodology", sectionId: "ai-methodology" },
+    { name: "AI Landscape", sectionId: "ai-scale" },
+    { name: "Differentiators", sectionId: "why-us" },
     { name: "Our Team", href: "/team" },
     { name: "About Us", href: "/about" },
     { name: "Videos", href: "/videos" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact Us", sectionId: "contact" },
   ];
 
   return (
@@ -39,7 +52,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo on the left with more padding */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2 ml-6" onClick={() => handleNavigation('/')}>
+            <Link to="/" className="flex items-center space-x-2 ml-6" onClick={() => navigate('/')}>
               <img 
                 src="/assets/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
@@ -58,7 +71,13 @@ const Navbar = () => {
                   ? "bg-cpp-accent hover:bg-cpp-light-accent text-white text-sm px-3 py-2" 
                   : "text-white hover:text-cpp-accent text-sm px-3 py-2"
                 }
-                onClick={() => handleNavigation(link.href)}
+                onClick={() => {
+                  if (link.sectionId) {
+                    handleNavigation(link.sectionId);
+                  } else if (link.href) {
+                    navigate(link.href);
+                  }
+                }}
               >
                 {link.name}
               </Button>
@@ -89,7 +108,13 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <button
                 key={link.name}
-                onClick={() => handleNavigation(link.href)}
+                onClick={() => {
+                  if (link.sectionId) {
+                    handleNavigation(link.sectionId);
+                  } else if (link.href) {
+                    navigate(link.href);
+                  }
+                }}
                 className="block w-full text-left py-4 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-colors duration-200 border-b border-cpp-accent/10"
               >
                 {link.name}
