@@ -11,59 +11,39 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleNavigation = (sectionId: string) => {
-    // If not on home page, navigate to home first
-    if (location.pathname !== '/') {
-      navigate('/');
-      // Wait for navigation to complete, then scroll
-      setTimeout(() => {
-        scrollToSection(sectionId);
-      }, 100);
-    } else {
-      // Already on home page, just scroll
-      scrollToSection(sectionId);
-    }
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    // Smooth scroll to top after navigation
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
     setIsMenuOpen(false);
-  };
-
-  const handlePageNavigation = (href: string) => {
-    navigate(href);
-    // Smooth scroll to top when navigating to other pages
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    setIsMenuOpen(false);
-  };
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
   };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Services", sectionId: "services" },
-    { name: "Methodology", sectionId: "ai-methodology" },
-    { name: "AI Landscape", sectionId: "ai-scale" },
-    { name: "Differentiators", sectionId: "why-us" },
-    { name: "Our Team", sectionId: "leaders" },
-    { name: "About Us", sectionId: "about" },
+    { name: "Services", href: "/services" },
+    { name: "Methodology", href: "/methodology" },
+    { name: "AI Landscape", href: "/ai-landscape" },
+    { name: "Differentiators", href: "/differentiators" },
+    { name: "Our Team", href: "/team" },
+    { name: "About Us", href: "/about" },
     { name: "Videos", href: "/videos" },
-    { name: "Contact Us", sectionId: "contact" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 bg-cpp-blue shadow-md transition-all duration-300">
+    <nav className="fixed inset-x-0 top-0 z-50 bg-cpp-blue shadow-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
           {/* Logo on the left with more padding */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2 ml-6" onClick={() => handlePageNavigation('/')}>
+            <Link to="/" className="flex items-center space-x-2 ml-6" onClick={() => handleNavigation('/')}>
               <img 
                 src="/assets/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
-                className="h-16 w-auto transition-transform duration-300 hover:scale-105"
+                className="h-16 w-auto"
               />
             </Link>
           </div>
@@ -75,16 +55,10 @@ const Navbar = () => {
                 key={link.name}
                 variant={index === navLinks.length - 1 ? "default" : "ghost"} 
                 className={index === navLinks.length - 1 
-                  ? "bg-cpp-accent hover:bg-cpp-light-accent text-white text-sm px-3 py-2 transition-all duration-300" 
-                  : "text-white hover:text-cpp-accent text-sm px-3 py-2 transition-all duration-300 hover:bg-white/10"
+                  ? "bg-cpp-accent hover:bg-cpp-light-accent text-white text-sm px-3 py-2" 
+                  : "text-white hover:text-cpp-accent text-sm px-3 py-2"
                 }
-                onClick={() => {
-                  if (link.sectionId) {
-                    handleNavigation(link.sectionId);
-                  } else if (link.href) {
-                    handlePageNavigation(link.href);
-                  }
-                }}
+                onClick={() => handleNavigation(link.href)}
               >
                 {link.name}
               </Button>
@@ -95,7 +69,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="p-2 text-white focus:outline-none transition-transform duration-200 hover:scale-110"
+              className="p-2 text-white focus:outline-none"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
@@ -115,14 +89,8 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <button
                 key={link.name}
-                onClick={() => {
-                  if (link.sectionId) {
-                    handleNavigation(link.sectionId);
-                  } else if (link.href) {
-                    handlePageNavigation(link.href);
-                  }
-                }}
-                className="block w-full text-left py-4 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-all duration-300 border-b border-cpp-accent/10 transform hover:translate-x-2"
+                onClick={() => handleNavigation(link.href)}
+                className="block w-full text-left py-4 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-colors duration-200 border-b border-cpp-accent/10"
               >
                 {link.name}
               </button>
