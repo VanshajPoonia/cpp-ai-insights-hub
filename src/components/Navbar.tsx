@@ -40,8 +40,8 @@ const Navbar = () => {
     { name: "Methodology", sectionId: "ai-methodology" },
     { name: "AI Landscape", sectionId: "ai-scale" },
     { name: "Differentiators", sectionId: "why-us" },
-    { name: "Our Team", href: "/team" },
-    { name: "About Us", href: "/about" },
+    { name: "Our Team", sectionId: "leaders" },
+    { name: "About Us", sectionId: "about" },
     { name: "Videos", href: "/videos" },
     { name: "Contact Us", sectionId: "contact" },
   ];
