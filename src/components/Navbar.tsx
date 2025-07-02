@@ -26,6 +26,13 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  const handlePageNavigation = (href: string) => {
+    navigate(href);
+    // Smooth scroll to top when navigating to other pages
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -47,16 +54,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 bg-cpp-blue shadow-md">
+    <nav className="fixed inset-x-0 top-0 z-50 bg-cpp-blue shadow-md transition-all duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
           {/* Logo on the left with more padding */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2 ml-6" onClick={() => navigate('/')}>
+            <Link to="/" className="flex items-center space-x-2 ml-6" onClick={() => handlePageNavigation('/')}>
               <img 
                 src="/assets/47cd0066-5828-4f9a-abfa-d8d2284584be.png" 
                 alt="Covington Place Partners Logo" 
-                className="h-16 w-auto"
+                className="h-16 w-auto transition-transform duration-300 hover:scale-105"
               />
             </Link>
           </div>
@@ -68,14 +75,14 @@ const Navbar = () => {
                 key={link.name}
                 variant={index === navLinks.length - 1 ? "default" : "ghost"} 
                 className={index === navLinks.length - 1 
-                  ? "bg-cpp-accent hover:bg-cpp-light-accent text-white text-sm px-3 py-2" 
-                  : "text-white hover:text-cpp-accent text-sm px-3 py-2"
+                  ? "bg-cpp-accent hover:bg-cpp-light-accent text-white text-sm px-3 py-2 transition-all duration-300" 
+                  : "text-white hover:text-cpp-accent text-sm px-3 py-2 transition-all duration-300 hover:bg-white/10"
                 }
                 onClick={() => {
                   if (link.sectionId) {
                     handleNavigation(link.sectionId);
                   } else if (link.href) {
-                    navigate(link.href);
+                    handlePageNavigation(link.href);
                   }
                 }}
               >
@@ -88,7 +95,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="p-2 text-white focus:outline-none"
+              className="p-2 text-white focus:outline-none transition-transform duration-200 hover:scale-110"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
@@ -112,10 +119,10 @@ const Navbar = () => {
                   if (link.sectionId) {
                     handleNavigation(link.sectionId);
                   } else if (link.href) {
-                    navigate(link.href);
+                    handlePageNavigation(link.href);
                   }
                 }}
-                className="block w-full text-left py-4 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-colors duration-200 border-b border-cpp-accent/10"
+                className="block w-full text-left py-4 px-4 font-inter text-white text-lg hover:bg-cpp-light-blue/20 rounded transition-all duration-300 border-b border-cpp-accent/10 transform hover:translate-x-2"
               >
                 {link.name}
               </button>
