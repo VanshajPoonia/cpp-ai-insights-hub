@@ -27,35 +27,35 @@ const AboutSection = () => {
       title: "Head of Growth",
       bio: "Former Chief Strategy Officer of Veil. Former President, Wunderman Thompson Health Former EVP, Marketing Direct.",
       imgUrl: "/assets/faf2caa8-3fc5-4d36-9ccb-4892bc452a60.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-1"
+      linkedinUrl: "https://www.linkedin.com/in/mike-burns-a173254/"
     },
     {
       name: "Shea Long",
       title: "Head of Innovation",
       bio: "Former Chief Product Officer, Alivi Health. Former Head of Commercial Innovation, Centene, ModivCare, Papa Health, EmpowerMe Wellness",
       imgUrl: "/assets/e74dcb32-af0d-4c86-933b-1c352325faf3.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-2"
+      linkedinUrl: "https://www.linkedin.com/in/SheaLong/"
     },
     {
       name: "John Cage",
       title: "Head of Transformation",
       bio: "Former VP of Enterprise Support Services, Sykes Enterprises. Former VP, CoreExpress Founder and Investor, Lit.AI",
       imgUrl: "/assets/88dfe074-2883-4c83-9054-8ad10ac731b7.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-3"
+      linkedinUrl: "https://www.linkedin.com/in/john-cage-4a265a3/"
     },
     {
       name: "Jennifer Hickman",
       title: "Advisor - Consumer Experience",
       bio: "Former EVP, Wunderman Thompson Health. Managing Partner, JH Marketing Group.",
       imgUrl: "/assets/2248b558-817a-46c4-8ad2-2ee443b6c186.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-4"
+      linkedinUrl: "https://www.linkedin.com/in/jenniferhickman/"
     },
     {
       name: "Ben Vierck",
       title: "Head of Technology",
       bio: "Founder of Positronic AI and co-founder of Devfarm Software, with a history of leadership at Fortune 100 companies.",
       imgUrl: "/assets/image_bw.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-5"
+      linkedinUrl: "https://www.linkedin.com/in/xcud/"
     }
   ];
 
