@@ -30,6 +30,7 @@ const Navbar = () => {
     { name: "Our Team", href: "/team" },
     { name: "About Us", href: "/about" },
     { name: "Videos", href: "/videos" },
+    { name: "White Papers", href: "/white-papers" },
     { name: "Contact Us", href: "/contact" },
   ];
 
