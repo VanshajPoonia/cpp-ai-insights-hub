@@ -49,16 +49,16 @@ const VideosPage = () => {
             <h2 className="text-2xl font-montserrat font-semibold text-cpp-blue mb-6">Featured Video</h2>
             <div className="max-w-4xl mx-auto">
               <div className="flex justify-center">
-                <iframe 
-                  width="800" 
-                  height="450" 
-                  src="https://www.youtube-nocookie.com/embed/fdOucyhhcV0?modestbranding=1&rel=0&showinfo=0" 
-                  title="The AI Imperative for Business Leaders"
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen 
-                  className="rounded-lg shadow-lg w-full max-w-3xl aspect-video"
-                />
+                <div className="relative w-full max-w-3xl" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                  <iframe 
+                    src="https://geo.dailymotion.com/player.html?video=x9zbweo"
+                    style={{ width: '100%', height: '100%', position: 'absolute', left: 0, top: 0, overflow: 'hidden', border: 'none' }}
+                    allowFullScreen
+                    title="The AI Imperative for Business Leaders"
+                    allow="web-share"
+                    className="rounded-lg shadow-lg"
+                  />
+                </div>
               </div>
               <div className="mt-4 text-center">
                 <h3 className="text-xl font-semibold text-cpp-blue">The AI Imperative for Business Leaders</h3>
