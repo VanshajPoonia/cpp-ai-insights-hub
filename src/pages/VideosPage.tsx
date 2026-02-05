@@ -52,7 +52,7 @@ const VideosPage = () => {
                 <iframe 
                   width="800" 
                   height="450" 
-                  src="https://www.youtube.com/embed/fdOucyhhcV0" 
+                  src="https://www.youtube-nocookie.com/embed/fdOucyhhcV0?modestbranding=1&rel=0&showinfo=0" 
                   title="The AI Imperative for Business Leaders"
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
