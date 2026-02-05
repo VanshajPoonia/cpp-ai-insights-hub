@@ -44,24 +44,25 @@ const VideosPage = () => {
             </p>
           </div>
 
-          {/* Featured Post */}
+          {/* Featured Video */}
           <div className="mb-16">
-            <h2 className="text-2xl font-montserrat font-semibold text-cpp-blue mb-6">Featured Post</h2>
+            <h2 className="text-2xl font-montserrat font-semibold text-cpp-blue mb-6">Featured Video</h2>
             <div className="max-w-4xl mx-auto">
               <div className="flex justify-center">
                 <iframe 
-                  src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7338686933260279811?compact=1" 
-                  height="399" 
-                  width="504" 
+                  width="800" 
+                  height="450" 
+                  src="https://www.youtube.com/embed/fdOucyhhcV0" 
+                  title="The AI Imperative for Business Leaders"
                   frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen 
-                  title="Featured LinkedIn Post"
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg shadow-lg w-full max-w-3xl aspect-video"
                 />
               </div>
               <div className="mt-4 text-center">
-                <h3 className="text-xl font-semibold text-cpp-blue">AI Strategy Implementation</h3>
-                <p className="text-gray-700">Learn how to implement effective AI strategies for your business.</p>
+                <h3 className="text-xl font-semibold text-cpp-blue">The AI Imperative for Business Leaders</h3>
+                <p className="text-gray-700">Essential insights on AI strategy and implementation for today's business leaders.</p>
               </div>
             </div>
           </div>
