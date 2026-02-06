@@ -51,11 +51,11 @@ const VideosPage = () => {
               <div className="flex justify-center">
                 <div className="relative w-full max-w-3xl" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
                   <iframe 
-                    src="https://geo.dailymotion.com/player.html?video=x9zbweo"
+                    src="https://www.youtube-nocookie.com/embed/re1dA_XenTk?modestbranding=1&rel=0"
                     style={{ width: '100%', height: '100%', position: 'absolute', left: 0, top: 0, overflow: 'hidden', border: 'none' }}
                     allowFullScreen
                     title="The AI Imperative for Business Leaders"
-                    allow="web-share"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     className="rounded-lg shadow-lg"
                   />
                 </div>
