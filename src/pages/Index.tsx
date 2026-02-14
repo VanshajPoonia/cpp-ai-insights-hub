@@ -9,6 +9,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import AISpectrumSection from "@/components/Ailandscape";
 import AiConsultingMethodology from "@/components/Navigation";
+import WhitePaperTeaser from "@/components/WhitePaperTeaser";
 
 const Index = () => {
   return (
@@ -23,6 +24,7 @@ const Index = () => {
       <WhyUsSection />
       <AiConsultingMethodology />
       {/*<TestimonialsSection />*/}
+      <WhitePaperTeaser />
       <ContactSection />
       <Footer />
     </div>
