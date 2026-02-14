@@ -17,6 +17,9 @@ const Index = () => {
  
 
       <Navbar />
+      <div className="pt-[72px]">
+        <WhitePaperTeaser />
+      </div>
       <Hero />
       <AboutSection />
       <ServicesSection />
@@ -24,7 +27,6 @@ const Index = () => {
       <WhyUsSection />
       <AiConsultingMethodology />
       {/*<TestimonialsSection />*/}
-      <WhitePaperTeaser />
       <ContactSection />
       <Footer />
     </div>
