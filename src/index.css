@@ -167,15 +167,18 @@
 }
 
 /* PDF text layer - enable text selection and highlighting */
-.react-pdf__Page__textContent {
+.textLayer {
   user-select: text !important;
   cursor: text !important;
 }
 
-.react-pdf__Page__textContent span {
-  opacity: 0.3 !important;
+.textLayer :is(span, br) {
+  color: transparent !important;
+  cursor: text !important;
+  user-select: text !important;
 }
 
-.react-pdf__Page__textContent span::selection {
-  background: hsl(var(--cpp-accent) / 0.4) !important;
+.textLayer span::selection {
+  background: rgba(232, 108, 0, 0.4) !important;
+  color: transparent !important;
 }
