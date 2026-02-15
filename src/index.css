@@ -165,3 +165,17 @@
 .read-the-docs {
   color: #888;
 }
+
+/* PDF text layer - enable text selection and highlighting */
+.react-pdf__Page__textContent {
+  user-select: text !important;
+  cursor: text !important;
+}
+
+.react-pdf__Page__textContent span {
+  opacity: 0.3 !important;
+}
+
+.react-pdf__Page__textContent span::selection {
+  background: hsl(var(--cpp-accent) / 0.4) !important;
+}
