@@ -228,6 +228,12 @@ const WhitePapersPage = () => {
                 </Document>
               )}
 
+              {!loading && (pageNumber === 1 || pageNumber === 2) && numPages > pageNumber && (
+                <div className="mt-4 py-3 px-6 bg-cpp-accent/10 border border-cpp-accent/30 rounded-md text-center">
+                  <p className="text-sm font-medium text-cpp-blue">To keep reading press <strong>Next</strong> below ↓</p>
+                </div>
+              )}
+
               {!loading && numPages > 0 && (
                 <div className="mt-4 mb-2 flex items-center gap-4 flex-shrink-0">
                   <Button onClick={() => setPageNumber(p => Math.max(p - 1, 1))} disabled={pageNumber <= 1} variant="outline" size="sm">
