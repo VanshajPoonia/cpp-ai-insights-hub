@@ -166,19 +166,3 @@
   color: #888;
 }
 
-/* PDF text layer - enable text selection and highlighting */
-.textLayer {
-  user-select: text !important;
-  cursor: text !important;
-}
-
-.textLayer :is(span, br) {
-  color: transparent !important;
-  cursor: text !important;
-  user-select: text !important;
-}
-
-.textLayer span::selection {
-  background: rgba(232, 108, 0, 0.4) !important;
-  color: transparent !important;
-}
