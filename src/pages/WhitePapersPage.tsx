@@ -33,8 +33,8 @@ const whitePapers: WhitePaper[] = [
     title: 'Speed is Strategy: How Agentic AI Rewired an Entire Operating Model',
     subtitle: 'A Board-Ready Enhancement Report',
     description: 'Discover how agentic AI can transform your operating model, accelerate decision-making, and create lasting competitive advantage.',
-    pdfUrl: '/assets/ConnectBase_Agentic_AI_Board_Ready_Enhanced.pdf',
-    fileName: 'ConnectBase_Agentic_AI_Board_Ready_Enhanced.pdf',
+    pdfUrl: '/assets/ConnectBase_Agentic_AI_Board_Ready_Enhanced_1.pdf',
+    fileName: 'ConnectBase_Agentic_AI_Board_Ready_Enhanced_1.pdf',
   },
 ];
 
