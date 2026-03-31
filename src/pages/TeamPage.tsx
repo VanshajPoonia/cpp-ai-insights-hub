@@ -10,35 +10,42 @@ const TeamPage = () => {
       title: "Head of Growth",
       bio: "Former Chief Strategy Officer of Veil. Former President, Wunderman Thompson Health Former EVP, Marketing Direct.",
       imgUrl: "/assets/faf2caa8-3fc5-4d36-9ccb-4892bc452a60.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-1"
+      linkedinUrl: "https://www.linkedin.com/in/mike-burns-a173254/"
     },
     {
       name: "Shea Long",
       title: "Head of Innovation",
       bio: "Former Chief Product Officer, Alivi Health. Former Head of Commercial Innovation, Centene, ModivCare, Papa Health, EmpowerMe Wellness",
       imgUrl: "/assets/e74dcb32-af0d-4c86-933b-1c352325faf3.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-2"
-    },
-    {
-      name: "John Cage",
-      title: "Head of Transformation",
-      bio: "Former VP of Enterprise Support Services, Sykes Enterprises. Former VP, CoreExpress Founder and Investor, Lit.AI",
-      imgUrl: "/assets/88dfe074-2883-4c83-9054-8ad10ac731b7.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-3"
+      linkedinUrl: "https://www.linkedin.com/in/SheaLong/"
     },
     {
       name: "Jennifer Hickman",
       title: "Advisor - Consumer Experience",
       bio: "Former EVP, Wunderman Thompson Health. Managing Partner, JH Marketing Group.",
       imgUrl: "/assets/2248b558-817a-46c4-8ad2-2ee443b6c186.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-4"
+      linkedinUrl: "https://www.linkedin.com/in/jenniferhickman/"
     },
     {
-      name: "Ben Vierck",
-      title: "Head of Technology",
-      bio: "Founder of Positronic AI and co-founder of Devfarm Software, with a history of leadership at Fortune 100 companies.",
-      imgUrl: "/assets/image_bw.png",
-      linkedinUrl: "https://www.linkedin.com/in/sample-profile-5"
+      name: "James Dickman",
+      title: "Chief Technology Officer",
+      bio: "James sets Sigla's technical vision and leads architecture, engineering, and applied AI strategy. With over 25 years as a software architect and technology entrepreneur, he's built dozens of production systems spanning cloud platforms, data pipelines, real-time analytics, and AI-driven applications.",
+      imgUrl: "",
+      linkedinUrl: "#"
+    },
+    {
+      name: "Jason Wargel",
+      title: "SVP - Program Management",
+      bio: "Jason brings over 20 years of experience building and leading technology delivery organizations. He oversees strategy, operations, and execution—ensuring every AI engagement moves from ambiguity to a clear, scalable plan.",
+      imgUrl: "",
+      linkedinUrl: "#"
+    },
+    {
+      name: "Charlie Eaton",
+      title: "SVP - Product Development & Design",
+      bio: "Charles leads design strategy across product and AI engagements, ensuring solutions are technically sound and deeply aligned with real human and business needs. His rare combination of IT systems architecture and UX design expertise makes him uniquely effective at shaping agentic AI solutions.",
+      imgUrl: "",
+      linkedinUrl: "#"
     }
   ];
 
