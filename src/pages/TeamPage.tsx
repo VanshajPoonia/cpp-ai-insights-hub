@@ -36,7 +36,7 @@ const TeamPage = () => {
     {
       name: "Jason Wargel",
       title: "SVP - Program Management",
-      bio: "Jason brings over 20 years of experience building and leading technology delivery organizations. He oversees strategy, operations, and execution—ensuring every AI engagement moves from ambiguity to a clear, scalable plan.",
+      bio: "Jason brings over 20 years of experience building and leading technology delivery organizations. He oversees strategy, operations, and execution - ensuring every AI engagement moves from ambiguity to a clear, scalable plan.",
       imgUrl: "",
       linkedinUrl: "#"
     },
