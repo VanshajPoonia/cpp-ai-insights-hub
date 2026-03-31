@@ -47,21 +47,21 @@ const AboutSection = () => {
       name: "James Dickman",
       title: "Chief Technology Officer",
       bio: "James sets Sigla's technical vision and leads architecture, engineering, and applied AI strategy. With over 25 years as a software architect and technology entrepreneur, he's built dozens of production systems spanning cloud platforms, data pipelines, real-time analytics, and AI-driven applications.",
-      imgUrl: "",
+      imgUrl: "/assets/james-dickman.jpeg",
       linkedinUrl: "#"
     },
     {
       name: "Jason Wargel",
       title: "SVP - Program Management",
       bio: "Jason brings over 20 years of experience building and leading technology delivery organizations. He oversees strategy, operations, and execution - ensuring every AI engagement moves from ambiguity to a clear, scalable plan.",
-      imgUrl: "",
+      imgUrl: "/assets/jason-wargel.jpeg",
       linkedinUrl: "#"
     },
     {
       name: "Charlie Eaton",
       title: "SVP - Product Development & Design",
       bio: "Charles leads design strategy across product and AI engagements, ensuring solutions are technically sound and deeply aligned with real human and business needs. His rare combination of IT systems architecture and UX design expertise makes him uniquely effective at shaping agentic AI solutions.",
-      imgUrl: "",
+      imgUrl: "/assets/charlie-eaton.jpeg",
       linkedinUrl: "#"
     }
   ];
