@@ -115,7 +115,7 @@ const AboutSection = () => {
                   className="w-48 h-48 rounded-full bg-gradient-to-br from-cpp-blue to-cpp-accent/50 flex items-center justify-center overflow-hidden p-1 mb-6 hover:scale-105 transition-transform duration-300 cursor-pointer"
                 >
                   <Avatar className="w-44 h-44">
-                    <AvatarImage src={founder.imgUrl} alt={founder.name} className="object-cover" />
+                    <AvatarImage src={founder.imgUrl} alt={founder.name} className="object-cover grayscale" />
                     <AvatarFallback className="bg-white text-5xl font-bold text-cpp-accent">
                       {founder.name.charAt(0)}
                     </AvatarFallback>
