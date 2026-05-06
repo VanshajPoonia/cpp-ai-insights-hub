@@ -21,6 +21,14 @@ interface WhitePaper {
 
 const whitePapers: WhitePaper[] = [
   {
+    id: 'workflow-transformation',
+    title: 'Workflow Transformation: The Non-Negotiable Foundation of AI ROI',
+    subtitle: 'CPP Thought Leadership Series — Part 1 of 2',
+    description: 'Why workflow redesign—not tooling—is the single greatest driver of measurable AI ROI, and what leadership must do differently to move from experimentation to execution.',
+    pdfUrl: '/assets/CPP_Workflow_Transformation_Part_1.pdf',
+    fileName: 'CPP_Workflow_Transformation_Part_1.pdf',
+  },
+  {
     id: 'llm-firewall',
     title: 'Bringing Large Language Models Inside the Corporate Firewall',
     subtitle: 'A Technical White Paper for CIOs and Chief AI Architects',

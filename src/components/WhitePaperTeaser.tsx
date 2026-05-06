@@ -23,7 +23,7 @@ const WhitePaperTeaser = () => {
               <p className="text-white/90 text-sm sm:text-base font-medium">
                 <span className="text-cpp-accent font-semibold">New White Paper</span>
                 <span className="mx-2 text-white/30">|</span>
-                Speed is Strategy: How Agentic AI Rewired an Entire Operating Model
+                Workflow Transformation: The Non-Negotiable Foundation of AI ROI
               </p>
             </div>
           </div>
